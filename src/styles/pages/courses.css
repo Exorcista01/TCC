@@ -1,0 +1,120 @@
+
+.Course-main-titlle{
+    border-bottom: 1px solid #0f23388c;
+    min-height: 4rem;
+}
+.Course-main-titlle h1{
+    font-size: 2.5rem;
+}
+
+.DashboardCard{
+    margin-top: 20px;
+}
+.DashboardCard-wrapper .DashboardCard-Card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;        /* Mantém o tamanho cheio dentro da coluna */
+    overflow: hidden;   /* Oculta o que passar da altura */
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(0, 0, 0 , 0.05);
+    transition: transform 0.3s ease;
+}
+
+.DashboardCard-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px; 
+}
+.DashboardCard-wrapper .DashboardCard-Card:hover{
+    transform: translateY(-10px);
+}
+
+
+.DashboardCard-Card .DashboardCard-Card-img img{
+    width: 100%;
+    padding: 8px;
+    border-radius: 22px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.DashboardCard-Card .DashboardCard-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.DashboardCard-Card .DashboardCard-content .DashboardCard-title{
+    color: #111111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.DashboardCard-Card .DashboardCard-content .DashboardCard-text{
+    color: #747474;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.DashboardCard-Card .DashboardCard-content .DashboardCard-footer{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: auto;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0,  0.08);
+}
+
+.DashboardCard-Card .DashboardCard-footer .DashboardCard-profile{
+    display: flex;
+    align-items: center;
+
+}
+
+.DashboardCard-Card .DashboardCard-profile img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:  2px solid #fff;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.DashboardCard-Card .DashboardCard-profile .DashboardCard-profile-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.DashboardCard-Card .DashboardCard-profile .DashboardCard-profile-name{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+.DashboardCard-Card .DashboardCard-profile .DashboardCard-profile-role {
+    font-size: 0.8rem;
+    color: #7a7a7a;
+}
+
+.DashboardCard-Card .DashboardCard-footer .DashboardCard-button{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.81rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(135deg , #0497D5 0%, #2E4EAD  100%);
+    box-shadow: 0 8px 15px rgba(99, 102, 241,  0.2); 
+    transform: all 0.3s ease;
+}
+.DashboardCard-Card .DashboardCard-footer .DashboardCard-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(99, 102, 241,  0.3);
+}
