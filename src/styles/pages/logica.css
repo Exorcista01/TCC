@@ -13,22 +13,34 @@
 .accordion .accordion-item-header{
     padding: 1rem 3rem 0.5rem 1rem;
     min-height:  3.5rem;
-    line-height: 1.25rem;
-    font-weight: bold;
     display: flex;
+    font-weight: 1.25rem;
     flex-direction: column;
     align-items: centere;
     gap: 30px;
     position: relative;
     cursor: pointer;
 }
+.accordion-item-header-title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.003em;
+    color: #0f1114;
+}
+.accordion .accordion-item-header:hover{
+    background-color: #0e7ae611 ;
+}
 .accordion .accordion-item-header::after{
     content: "\002B";
     font-size: 2rem;
     position: absolute;
     right: 1rem;
+    top: 8px;
     transition:  transform 0.2s ease-in-out;
 }
+
+
 .accordion .accordion-item-header.active::after{
     content: "\2212"; 
 }
@@ -38,10 +50,37 @@
     transition: max-height 0.2s ease-out ;
 }
 .accordion-item-body-content{
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-image: linear-gradient(to right, #2E4EAD, #070F2B) 1;
+    padding: 1rem 5rem 1rem 5rem;
+    margin: 0;
 }
 .accordion .accordion-item-header.active + .accordion-item-body{
    max-height: 500px;
+}
+
+.accordion-body-top{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.accordion-body-top .accordion-body-top-items p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.accordion-body-top .accordion-body-top-items i{
+    padding-right: 5px;
+}
+.accordion-body-top .accordion-body-top-items span{
+    color: #5b6780;
+    font-weight: 700;
+}
+
+.accordion-line-break{
+    width: calc(100% + 10rem);
+    height: 1px;
+    background-color: #0f111462;
+    margin-left: -5rem;
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
