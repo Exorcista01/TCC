@@ -2,13 +2,14 @@
     width: 90%;
     max-width: 1000px;
     margin:  2rem auto;
+    z-index: 1;
 }
 .accordion .accordion-item{
     background-color: #fff;
     color: black;
     margin: 1rem 0;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 5px 0 rgba((0), 0, 0, 0.5);
+    
 }
 .accordion .accordion-item-header{
     padding: 1rem 3rem 0.5rem 1rem;
@@ -16,7 +17,6 @@
     display: flex;
     font-weight: 1.25rem;
     flex-direction: column;
-    align-items: centere;
     gap: 30px;
     position: relative;
     cursor: pointer;
@@ -50,11 +50,11 @@
     transition: max-height 0.2s ease-out ;
 }
 .accordion-item-body-content{
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin: 0;
 }
 .accordion .accordion-item-header.active + .accordion-item-body{
-   max-height: 500px;
+   max-height: 100%;
 }
 
 .accordion-body-top{
@@ -75,6 +75,9 @@
     color: #5b6780;
     font-weight: 700;
 }
+.accordion-body-info{
+    padding-block: 2rem;
+}
 
 .accordion-line-break{
     width: calc(100% + 10rem);
@@ -83,4 +86,131 @@
     margin-left: -5rem;
     margin-top: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.accordion-item-header h2{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.003em;
+    color: #0f1114;
+}
+.accordion-item-body-Lista{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.accordion-body-info-expansion{
+    display: flex;
+    padding: 1rem 2rem;
+}
+.accordion-body-info-expansion button{
+    border: none;
+    background-color: transparent;
+    color: blue;
+    font-size: 0.975rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.003em;
+    cursor: pointer;
+}
+
+
+.accordion-nested-accordion{
+    width: 100%;
+}
+
+.header-segund {
+    padding: 1rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    display: flex;
+    font-weight: 1.25rem;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover igual ao original */
+.header-segund:hover {
+    background-color: #0e7ae611;
+}
+
+/* Ícone de abrir/fechar igual ao original */
+.header-segund::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Quando ativo, vira o ícone de "-" */
+.header-segund.active::after {
+    content: "\2212"; 
+}
+
+/* Título interno igual ao original */
+.header-segund h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.003em;
+    color: #0f1114;
+}
+
+
+.accordion-wrappper{
+    padding: 0rem 1.5rem 1rem 1rem
+}
+.accordion-item-body-Lista{
+    display: flex;
+    flex-direction: column;
+}
+.accordion-item-body-Lista .accordion-body-lista-itens{
+    width: 100%;
+}   
+.lista-itens-links{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.003em;
+    color: #0f1114;
+}
+
+.accordion-item-list-conteudo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px 8px 10px;
+    cursor: pointer;
+}
+.accordion-item-list-conteudo:hover{
+  background-color: #0e7ae611;
+}
+.accordion-item-list-icones {
+    display: flex;
+    height: 100%;
+    margin-right: 15px;
+    
+}
+.accordion-item-list-icones i{
+    padding-top: 8px;
+    padding-left: 8px;
+    background-color: #5b67804f;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+
+.accordion-item-list-informacao .lista-itens-links{
+    font: 400 1rem / 1.5rem Source Sans Pro,Arial,sans-serif;
+}
+
+.accordion-item-lis-extraInfo{
+    font-weight: 500;
+    color: #5b6780c2;
 }
