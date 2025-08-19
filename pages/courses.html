@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- QUILL-->
+    <!-- QUILL  Editor de Texto-->
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
 
-    <!-- Seus estilos depois -->
+    <!-- Css do Site -->
     <link rel="stylesheet" href="/src/styles/vendor/reset.css">
     <link rel="stylesheet" href="/src/styles/pages/courses.css">
     <link rel="stylesheet" href="/src/styles/pages/styles.css">
@@ -35,7 +35,7 @@
 
                     <ul>
                         <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
                     </ul>
                 </div>
 
@@ -45,47 +45,47 @@
 
         <div class="sidebar">
             <ul>
-                <li><a href="/index.html">
-                        <span class="icon">
-                            <i class="fa-solid fa-tv" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Dashboard</span>
-                    </a></li>
-
+                <li><a href="#" >
+                    <span class="icon">
+                        <i class="fa-solid fa-tv" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a></li>
+                
                 <li><a href="pages/courses.html" class="active">
-                        <span class="icon">
-                            <i class="fa-solid fa-book" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Course</span>
-                    </a></li>
-
+                    <span class="icon">
+                        <i class="fa-solid fa-book" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Cursos</span>
+                </a></li>
+        
                 <li><a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Redação</span>
-                    </a></li>
-
+                    <span class="icon">
+                        <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Exercícios</span>
+                </a></li>
+        
                 <li><a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Cronogama</span>
-                    </a></li>
-
+                    <span class="icon">
+                        <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Certificados</span>
+                </a></li>
+        
                 <li><a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-clock"></i>
-                        </span>
-                        <span class="title">Metas</span>
-                    </a></li>
-
+                  <span class="icon">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  <span class="title">Perfil</span>
+              </a></li>
+        
                 <li><a href="#" id="settings-toggle">
-                        <span class="icon">
-                            <i class="fa-solid fa-gear" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Settigs</span>
-                    </a></li>
+                    <span class="icon">
+                        <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Settigs</span>
+                </a></li>
             </ul>
         </div>
 
@@ -321,7 +321,7 @@
                 <button class="btnEdited" id="btEdited"><i class="fa-solid fa-pencil"></i></button>
             </div>
 
-            <!-- Overlay para o blur -->
+            
             <div class="overlay" id="overlay"></div>
 
 
@@ -339,6 +339,7 @@
                         </div>
 
                         <div class="form-content">
+                            <p class="label-description">Imagem do Card</p>
                             <label class="picture" for="picture__input" tabindex="0">
                                 <input type="file"  accept="imame/*" id="picture__input">
                                 <span class="picture__image">
@@ -349,8 +350,8 @@
                         </div>
 
                         <div class="Form-content-btns">
-                            <button class="btnEnvioEdit">Criar</button>
-                            <button class="btnCancelarEdit">Cancelar</button>
+                            <button  type="button" class="btnEnvioEdit">Criar</button>
+                            <button class="btnCancelarEdit" >Cancelar</button>
                         </div>
                     </form>
                 </div>

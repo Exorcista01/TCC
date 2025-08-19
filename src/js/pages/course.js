@@ -1,37 +1,3 @@
-// function createCard() {
-//     return `
-//       <div class="DashboardCard-Card">
-
-//         <div class="DashboardCard-Card-img">
-//           <img src="/src/assets/img/card-courses/card-imgs/jsf.png" alt="" id="img-card-script">
-//         </div>
-
-//         <div class="DashboardCard-content">
-//           <h3 class="DashboardCard-title" id="title-card-script">Java Script Fundamentos</h3>
-//           <p class="DashboardCard-text" id="description-card-script">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-//           <div class="DashboardCard-footer">
-//             <div class="DashboardCard-profile">
-//               <img src="/src/assets/img/card-courses/profile/francisco-removebg-preview.png" alt="Jessica chen">
-//               <div class="DashboardCard-profile-info">
-//                 <span class="DashboardCard-profile-name">Pessoa</span>
-//                 <span class="DashboardCard-profile-role">Profissão</span>
-//               </div>
-//             </div>
-//             <a href="" class="DashboardCard-button"> Read more</a>
-//           </div>
-//         </div>
-//       </div>
-//     `;
-//   }
-
-
-
-
-
-
-
-
-
 
 
 let quill;
@@ -104,6 +70,56 @@ inputFile.addEventListener('change', function(e) {
     pictureImage.innerHTML = pictureImageTxt;
   }
 });
+
+
+const btnEnvio = document.querySelector(".btnEnvioEdit");
+const btnCancelar = document.querySelector(".btnCancelarEdit");
+const CardsList  = document.querySelector(".DashboardCard-list");
+
+
+
+btnEnvio.addEventListener("click", (e) => {
+  e.defaultPrevented();
+
+
+  return `
+    <div class="DashboardCard-Card">
+
+      <a href="/pages/courses/Lógica.html">
+          <div class="DashboardCard-Card-img">
+              <img src="/src/assets/img/card-courses/card-imgs/manutenção.png" alt="">
+          </div>
+
+          <div class="DashboardCard-content">
+              <h3 class="DashboardCard-title">Manutenção de Computadores</h3>
+              <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                  dinheiro
+                  com isso</p>
+
+              <div class="DashboardCard-footer">
+                  <div class="DashboardCard-profile">
+                      <img src="/src/assets/img/card-courses/profile/pedro100.jpg"
+                          alt="Jessica chen">
+
+                      <div class="DashboardCard-profile-info">
+                          <span class="DashboardCard-profile-name">Pedro Paulo</span>
+                          <span class="DashboardCard-profile-role">Music / Technical</span>
+                      </div>
+
+                  </div>
+                  <a href="/pages/courses/Lógica.html" class="DashboardCard-button"> Read more</a>
+              </div>
+          </div>
+      </a>
+
+    </div>
+    `;
+
+    cardList.insertAdjacentHTML("beforeend", novoCard);
+
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("editBox").style.display = "none";
+})
 
 
 

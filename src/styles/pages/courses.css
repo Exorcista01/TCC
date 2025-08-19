@@ -152,18 +152,18 @@
 
 .edit {
     position: fixed;
-    top: 50%;
+    top: 52.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 82%;
+    height: 90%;
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 10;
     display: none;
-    overflow: hidden;
+    
 }
 
 .overlay {
@@ -179,7 +179,8 @@
 }
 
 .modal-open {
-    overflow: hidden; /* bloqueia o scroll */
+    height: auto;
+    overflow: scroll; /* bloqueia o scroll, desativa ele para o menu poode usar scrol */
 }
 
 .edit .edit-wrapper{
@@ -202,6 +203,14 @@
     width: 100%;
     flex-direction: column;
 }
+.form-content label,
+.label-description{
+    font-size: 0.975rem;
+    font-weight: 600;
+    margin-block: 0.2rem;
+    margin-left: 0.4rem;
+}
+
 .form-content > input[type="text"],
 .form-content > textarea {
     width: 100%;
