@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS -->
-     <link rel="stylesheet" href="/src/styles/vendor/reset.css">
-     <link rel="stylesheet" href="/src/styles/pages/courses.css">
-     <link rel="stylesheet" href="/src/styles/pages/styles.css">
-    <title>Evisirder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- QUILL-->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+
+    <!-- Seus estilos depois -->
+    <link rel="stylesheet" href="/src/styles/vendor/reset.css">
+    <link rel="stylesheet" href="/src/styles/pages/courses.css">
+    <link rel="stylesheet" href="/src/styles/pages/styles.css">
+    <title>Neo Akasha</title>
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -25,262 +32,338 @@
                     <div class="logo">
                         <a href="">NeoAkasha</a>
                     </div>
-        
+
                     <ul>
                         <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-user"></i></a></li>
                     </ul>
                 </div>
-                
+
             </div>
-            
+
         </header>
-        
+
         <div class="sidebar">
             <ul>
-                <li><a href="/index.html" >
-                    <span class="icon">
-                        <i class="fa-solid fa-tv" aria-hidden="true"></i>
-                    </span>
-                    <span class="title">Dashboard</span>
-                </a></li>
-                
+                <li><a href="/index.html">
+                        <span class="icon">
+                            <i class="fa-solid fa-tv" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a></li>
+
                 <li><a href="pages/courses.html" class="active">
-                    <span class="icon">
-                        <i class="fa-solid fa-book" aria-hidden="true"></i>
-                    </span>
-                    <span class="title">Course</span>
-                </a></li>
-        
+                        <span class="icon">
+                            <i class="fa-solid fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Course</span>
+                    </a></li>
+
                 <li><a href="#">
-                    <span class="icon">
-                        <i class="fa-solid fa-pen" aria-hidden="true"></i>
-                    </span>
-                    <span class="title">Redação</span>
-                </a></li>
-        
+                        <span class="icon">
+                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Redação</span>
+                    </a></li>
+
                 <li><a href="#">
-                    <span class="icon">
-                        <i class="fa-solid fa-list-check" aria-hidden="true"></i>
-                    </span>
-                    <span class="title">Cronogama</span>
-                </a></li>
-        
+                        <span class="icon">
+                            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Cronogama</span>
+                    </a></li>
+
                 <li><a href="#">
-                  <span class="icon">
-                    <i class="fa-solid fa-clock"></i>
-                  </span>
-                  <span class="title">Metas</span>
-              </a></li>
-        
+                        <span class="icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </span>
+                        <span class="title">Metas</span>
+                    </a></li>
+
                 <li><a href="#" id="settings-toggle">
-                    <span class="icon">
-                        <i class="fa-solid fa-gear" aria-hidden="true"></i>
-                    </span>
-                    <span class="title">Settigs</span>
-                </a></li>
+                        <span class="icon">
+                            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Settigs</span>
+                    </a></li>
             </ul>
         </div>
 
         <div class="main-container">
-           <div class="Course-main-titlle">
+            <div class="Course-main-titlle">
                 <h1>Cursos</h1>
-           </div>
+            </div>
 
-           <div class="DashboardCard">
+            <div class="DashboardCard">
                 <div class="DashboardCard-wrapper">
                     <div class="DashboardCard-list">
+
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/manutenção.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Manutenção de Computadores</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/pedro100.jpg" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Pedro Paulo</span>
-                                            <span class="DashboardCard-profile-role">Music / Technical</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="/pages/courses/Lógica.html" class="DashboardCard-button"> Read more</a>
+                            <a href="/pages/courses/Lógica.html">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/manutenção.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Manutenção de Computadores</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/pedro100.jpg"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Pedro Paulo</span>
+                                                <span class="DashboardCard-profile-role">Music / Technical</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="/pages/courses/Lógica.html" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/AI.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Inteligência Artificial</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/alisson.jpg" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Alisson Anjos</span>
-                                            <span class="DashboardCard-profile-role">Data Analyst</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/AI.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Inteligência Artificial</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/alisson.jpg"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Alisson Anjos</span>
+                                                <span class="DashboardCard-profile-role">Data Analyst</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/ciber.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Ciber-Segurança</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/ferreira.jpg" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Daniel Ferreira</span>
-                                            <span class="DashboardCard-profile-role">Professional Speaker</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/ciber.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Ciber-Segurança</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/ferreira.jpg"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Daniel Ferreira</span>
+                                                <span class="DashboardCard-profile-role">Professional Speaker</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/redes.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Redes de Computadores</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/natanael.jpg" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Natanael Góes</span>
-                                            <span class="DashboardCard-profile-role">Developer</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/redes.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Redes de Computadores</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/natanael.jpg"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Natanael Góes</span>
+                                                <span class="DashboardCard-profile-role">Developer</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/logica.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Lógica de Programação</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/userjorge-removebg-preview.png" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Jorge Luis</span>
-                                            <span class="DashboardCard-profile-role">Developer</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/logica.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Lógica de Programação</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/userjorge-removebg-preview.png"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Jorge Luis</span>
+                                                <span class="DashboardCard-profile-role">Developer</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/jsf.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Java Script Fundamentos</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/francisco-removebg-preview.png" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Francisco Yure</span>
-                                            <span class="DashboardCard-profile-role">Network Technician</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/jsf.png" alt="">
                                 </div>
-                            </div>
 
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Java Script Fundamentos</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/francisco-removebg-preview.png"
+                                                alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Francisco Yure</span>
+                                                <span class="DashboardCard-profile-role">Network Technician</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+
+                            </a>
                         </div>
 
                         <div class="DashboardCard-Card">
 
-                            <div class="DashboardCard-Card-img">
-                                <img src="/src/assets/img/card-courses/card-imgs/redes.png" alt="">
-                            </div>
-
-                            <div class="DashboardCard-content">
-                                <h3 class="DashboardCard-title">Best Frontend Framework</h3>
-                                <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha dinheiro com isso</p>
-
-                                <div class="DashboardCard-footer">
-                                    <div class="DashboardCard-profile">
-                                        <img src="/src/assets/img/card-courses/profile/ian.jpg" alt="Jessica chen">
-
-                                        <div class="DashboardCard-profile-info">
-                                            <span class="DashboardCard-profile-name">Ian </span>
-                                            <span class="DashboardCard-profile-role">Developer</span>
-                                        </div>
-
-                                    </div>
-                                    <a href="" class="DashboardCard-button"> Read more</a>
+                            <a href="">
+                                <div class="DashboardCard-Card-img">
+                                    <img src="/src/assets/img/card-courses/card-imgs/redes.png" alt="">
                                 </div>
-                            </div>
+
+                                <div class="DashboardCard-content">
+                                    <h3 class="DashboardCard-title">Best Frontend Framework</h3>
+                                    <p class="DashboardCard-text">Aprenda ser um bom tecnico de manutenção. E ganha
+                                        dinheiro
+                                        com isso</p>
+
+                                    <div class="DashboardCard-footer">
+                                        <div class="DashboardCard-profile">
+                                            <img src="/src/assets/img/card-courses/profile/ian.jpg" alt="Jessica chen">
+
+                                            <div class="DashboardCard-profile-info">
+                                                <span class="DashboardCard-profile-name">Ian </span>
+                                                <span class="DashboardCard-profile-role">Developer</span>
+                                            </div>
+
+                                        </div>
+                                        <a href="" class="DashboardCard-button"> Read more</a>
+                                    </div>
+                                </div>
+                            </a>
 
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
 
-           
+            <div class="Content-editPage">
+                <button class="btnEdited" id="btEdited"><i class="fa-solid fa-pencil"></i></button>
+            </div>
+
+            <!-- Overlay para o blur -->
+            <div class="overlay" id="overlay"></div>
+
+
+            <div class="edit" id="editBox">
+                <div class="edit-wrapper">
+                    <form action="" method="post" id="formEdited">
+                        <div class="form-content">
+                            <label for="">Titulo</label>
+                            <input type="text" placeholder="Titulo do Card">
+                        </div>
+
+                        <div class="form-content">
+                            <label for="">Descrisão</label>
+                            <textarea name="" id="" placeholder="Descrisão do Card"></textarea>
+                        </div>
+
+                        <div class="form-content">
+                            <label class="picture" for="picture__input" tabindex="0">
+                                <input type="file"  accept="imame/*" id="picture__input">
+                                <span class="picture__image">
+                                    <img src="" alt="" class="picture__img">
+                                </span>
+                            </label>
+                            
+                        </div>
+
+                        <div class="Form-content-btns">
+                            <button class="btnEnvioEdit">Criar</button>
+                            <button class="btnCancelarEdit">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
-   <script src="/src/js/pages/script.js"></script>
-   <script type="module" src="src/js/vendor/acquisitions.js"></script>
-   <script src="/src/js/pages/course.js"></script>
+    <script src="/src/js/pages/script.js"></script>
+    <script type="module" src="src/js/vendor/acquisitions.js"></script>
+    <script src="/src/js/pages/course.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+
 </body>
+
 </html>
